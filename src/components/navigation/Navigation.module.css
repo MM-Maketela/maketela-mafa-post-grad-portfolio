@@ -1,0 +1,15 @@
+.navList{
+    list-style: none;
+    color: inherit;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    padding-inline: 2rem;
+    margin: 0px;
+}
+button {
+    border: none;
+    background: transparent;
+    color: inherit;
+    cursor: pointer;
+}
