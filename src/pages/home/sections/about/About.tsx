@@ -6,7 +6,6 @@ export const About = () => {
 
      <div style={{backgroundColor:'black'}}>
      <div className={classes.image}>
- 
       </div>
      </div>
       <div className={classes.aboutMeInfo}>

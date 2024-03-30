@@ -1,0 +1,23 @@
+.services{
+    margin-top: 6rem;
+    border: 1px solid black;
+    color: rgba(0, 0, 0, 1);
+    
+}
+h1{
+   margin: 0px;
+   font-size: 4em;
+}
+p{
+    color: rgba(0, 0, 0, 0.7);
+    margin: 0px;
+}
+.servicesCards{
+    border: 1px solid red;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    width: 90%;
+    margin-inline: auto;
+    gap: 1rem;
+}
