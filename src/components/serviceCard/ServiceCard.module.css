@@ -1,5 +1,38 @@
 .serviceCard{
     width: 20rem;
     height: 20rem;
-    border: 1px solid red;
+    box-shadow: 1px 1px 10px rgba(0, 128, 128, 0.5);
+    border-radius: 10px;
+    padding: 10px;
+    display: grid;
+    justify-content: center;
+
+
+
+    
+
+}
+.serviceCard:hover{
+    transform: scale(1.1);
+    transition: .5s;
+}
+.icon{
+    background-color:teal;
+    color: white;
+    border-radius: 35rem;
+    width: 25%;
+    margin-inline:auto;
+    margin-block: auto;
+    padding: 1rem;
+
+  
+}
+
+h1{
+    color:teal;
+}
+p{
+    margin-top: 1rem;
+    color: rgba(0, 128, 128, 0.5);
+    
 }
