@@ -1,11 +1,11 @@
-.services{
+.portfolio{
+    min-height: 100vh;
+    border: 2px solid red;
     margin-top: 6rem;
-    color: rgba(0, 0, 0, 1);
-    
 }
-.servicesCards{
+.portfolioCards{
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-content: center;
     align-items: center;
     justify-items: center;

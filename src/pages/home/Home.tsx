@@ -6,6 +6,7 @@ import { Services } from "./sections/services/Services";
 import { DividerSection } from "./sections/divider-section/DividerSection";
 import { DividerCard } from "../../components/divider-card/DividerCard";
 import { Background } from "../../components/background-image/Background";
+import { Portfolio } from "./sections/portfolio/Portfolio";
 
 export const Home = () => {
   return (
@@ -14,6 +15,7 @@ export const Home = () => {
       <About />
       <Services />
       <DividerSection />
+      <Portfolio />
     </main>
   );
 };
