@@ -1,6 +1,6 @@
 .contact {
     min-height: 100vh;
-    background-color: rgba(0, 128, 128, 0.95);
+    background-color: rgba(0, 128, 128, 0.8);
     box-shadow: 1px 1px 1rem teal;
    display: grid;
    align-items: center;

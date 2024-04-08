@@ -8,7 +8,7 @@ import { DividerCard } from "../../components/divider-card/DividerCard";
 import { Background } from "../../components/background-image/Background";
 import { Portfolio } from "./sections/portfolio/Portfolio";
 import { Contact } from "./sections/contact/Contact";
-import image  from  '../../assets/amalgamation.png'
+import image  from  '../../assets/Green-Nature-HD-Background.jpg'
 
 export const Home = () => {
   return (

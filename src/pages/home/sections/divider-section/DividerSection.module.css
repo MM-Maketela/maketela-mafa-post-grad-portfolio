@@ -1,6 +1,6 @@
 .dividerSection{
     height: 25rem;
-    background-color: rgb(96, 125, 139, .95);
+    background-color: rgb(96, 125, 139, .8);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-items: center;
