@@ -1,6 +1,5 @@
 .portfolio{
     min-height: 100vh;
-    margin-top: 6rem;
 }
 .portfolioCards{
     display: grid;
