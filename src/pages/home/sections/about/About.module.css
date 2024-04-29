@@ -4,8 +4,8 @@
     margin-inline: auto;
     color: black;
     background-color: white;
-    /* border: 1px solid rgba(0, 128, 128, .5); */
-    box-shadow: 1px 1px 5px  rgba(0, 128, 128,.5);
+    border: 8px solid rgba(0, 128, 128, .05);
+    /* box-shadow: 1px 1px 5px  rgba(0, 128, 128,.5); */
     margin-top: 4rem;
     display: grid;
     grid-template-columns: 40% 60%;
@@ -21,7 +21,7 @@
 }
 .aboutMeInfo{
     padding: .4rem;
-    color: rgb(1, 77, 78,.85);
+    color: rgb(1, 77, 78,.75);
     text-align: start;
     font-size: 1.3rem;
   
