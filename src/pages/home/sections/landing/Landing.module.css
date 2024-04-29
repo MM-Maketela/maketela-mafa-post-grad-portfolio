@@ -4,4 +4,42 @@
     background-size: cover;
     background-repeat: none;
     background-position: center;
+    position: relative;
+}
+
+.heroText{
+    position: absolute;
+    top: 30%;
+    width: 50%;
+    right: 10%;
+    display: grid;
+    gap: 1.5rem;
+    
+    
+}
+.mafaName{
+    color: rgba(255, 255, 255);
+    text-align: start;
+}
+
+.heroSummary{
+    
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: start;
+
+}
+.typeWriter{
+    display: flex;
+    position: absolute;
+    bottom:10%;
+    width: 50%;
+    right: 5%;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: start;
+    color: rgba(255, 255, 255, 0.8);
+    align-items: center;
+    
 }

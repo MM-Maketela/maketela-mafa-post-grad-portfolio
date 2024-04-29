@@ -27,7 +27,7 @@ export const Header = () => {
               gap: ".3rem",
               border: "8px solid rgba(255, 255, 255, 0.05)",
               padding: ".3rem",
-              color:"white"
+              color:"rgba(255, 255, 255)"
             }}
           >
             <h4 style={{ padding: "0px", margin: "0px" }}>RESUME</h4>
