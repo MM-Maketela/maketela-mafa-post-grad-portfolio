@@ -12,6 +12,10 @@
 }
 .contactListItem{
     cursor: pointer;
+    border: 8px solid rgba(255, 255, 255, 0.1);
+    padding: .4rem;
+    border-radius: 50%;
+
 
 }
 .contactList {
@@ -21,10 +25,13 @@
     gap: 1rem;
     padding-inline: 2rem;
     margin: 0px;
+    align-items: center;
    
 }
 .divider {
     height: 2px;
     background-color: rgba(255, 255, 255, 0.05);
     margin-block:.5rem;
+    width: 40%;
+    margin-right: 0px;
 }
