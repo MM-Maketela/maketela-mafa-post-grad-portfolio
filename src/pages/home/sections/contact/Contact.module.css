@@ -56,18 +56,20 @@ input {
 
 .textArea, .input{
     width: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
     color: teal;
     box-sizing: border-box;
-    border: 4px solid rgba(0, 128, 128, 0.4);
+    /* border: 4px solid rgba(0, 128, 128, 0.4); */
     resize: vertical;
     padding: .5rem;
     outline: none;
     font-size: 1.2rem;
+    border: none;
+    
 }
 
-.textArea:focus, .input:focus {
-        border: 4px solid rgba(0, 128, 128, 0.7);
-}
+
 .iconContainer{
     margin: 1rem 0rem 0rem 0rem;
     list-style:none ;
