@@ -15,7 +15,7 @@ import { SiAndroidstudio,SiMysql } from "react-icons/si"
 export const Portfolio = () => {
   return (
     <div className={classes.portfolio}>
-        <SubHeader  heading="PORTFOLIO"  subText = "Lorem ipsum, dolor sit amet consectetur adipisicing elit." />
+        <SubHeader  heading="PORTFOLIO"  subText = "Explore a showcase of my finest work, exemplifying expertise, creativity, and dedication." />
         <div className={classes.portfolioCards}>
           <PortfolioCardWeb   image = {webImage}  name = "site name"  usedTools={[]}/>
           <PortfolioCardWeb   image = {webImage}  name = "site name"  usedTools={[]}/>
