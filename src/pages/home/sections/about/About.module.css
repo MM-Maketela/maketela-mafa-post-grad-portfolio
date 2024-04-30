@@ -4,7 +4,7 @@
     margin-inline: auto;
     color: black;
     background-color: white;
-    border: 8px solid rgba(128, 128, 128, 0.08);
+    
     /* box-shadow: 1px 1px 5px  rgba(0, 128, 128,.5); */
     margin-top: 4rem;
     display: grid;
@@ -24,5 +24,6 @@
     color: rgb(1, 77, 78,.75);
     text-align: start;
     font-size: 1.3rem;
+    border: 8px solid rgba(128, 128, 128, 0.08);
   
 }
