@@ -58,7 +58,6 @@ export const Header = () => {
         <div style={{ flexGrow: "1" }}></div>
         <div className={classes.divider}></div>
       </div>
-
       <div style={{ position: "relative" }}>
         <Navigation />
       </div>
