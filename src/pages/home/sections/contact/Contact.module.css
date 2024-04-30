@@ -1,118 +1,109 @@
 .contact {
-    min-height: 100vh;
-    background-color: rgba(0, 128, 128, 0.8);
-    box-shadow: 1px 1px 1rem teal;
-   display: grid;
-   align-items: center;
-
-  
+  min-height: 100vh;
+  background-color: rgba(0, 128, 128, 0.8);
+  box-shadow: 1px 1px 1rem teal;
+  display: grid;
+  align-items: center;
 }
-.contactCard{
-    
-    width: 80%;
-    background-color: rgba(255, 255, 255);
-    backdrop-filter: blur(5px);
-    margin-inline: auto;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    min-height: 20rem;
-    gap: 2rem;
-    padding: 2rem;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-    box-sizing: border-box;
-   
-
+.contactCard {
+  width: 80%;
+  background-color: rgba(255, 255, 255);
+  backdrop-filter: blur(5px);
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  min-height: 20rem;
+  gap: 2rem;
+  padding: 2rem;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  box-sizing: border-box;
 }
-.form{
-    display: grid;
-    padding: 2rem;
-    gap: 1rem;
-
-   
+.form {
+  display: grid;
+  padding: 2rem;
+  gap: 1rem;
 }
-.contactInfo, .form{
-  
-    width: 90%;
-    height: 90%;
+.contactInfo,
+.form {
+  width: 90%;
+  height: 90%;
 }
 
-.contactInfo{
-
-
-   
+.contactInfo {
 }
 input {
+  margin: 0px;
+  border-style: none;
+
+  height: 3rem;
+}
+
+.textArea {
+  min-height: 12rem;
+}
+
+.textArea,
+.input {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  color: teal;
+  box-sizing: border-box;
+  /* border: 4px solid rgba(0, 128, 128, 0.4); */
+  resize: vertical;
+  padding: 0.5rem;
+  outline: none;
+  font-size: 1.2rem;
+  border: none;
+}
+.iconContainer {
+  margin: 1rem 0rem 0rem 0rem;
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  justify-content: start;
+  padding: 0px;
+}
+.socialMediaIcon {
+  margin: 0px;
+  padding: 0.5rem;
+  border: 8px solid teal;
+  border-radius: 50%;
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  color: teal;
+  cursor: pointer;
+}
+
+
+.contactIconAndInfo>*{
+    width: fit-content;
+    height: fit-content;
     margin: 0px;
-    border-style:none;
-    
-    height: 3rem;
-}
-
-.textArea{
-    min-height: 12rem;
-}
-
-.textArea, .input{
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    color: teal;
-    box-sizing: border-box;
-    /* border: 4px solid rgba(0, 128, 128, 0.4); */
-    resize: vertical;
-    padding: .5rem;
-    outline: none;
-    font-size: 1.2rem;
-    border: none;
-    
-}
-
-
-.iconContainer{
-    margin: 1rem 0rem 0rem 0rem;
-    list-style:none ;
-    display: flex;
-    gap: 1rem;
-    justify-content: start;
     padding: 0px;
-
-  
 }
-.socialMediaIcon{
-    margin: 0px;
-    padding: .5rem;
-    border: 8px solid teal;
-    border-radius: 50%;
-    display: grid;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-    color: teal;
-    cursor: pointer;
+.contactIconAndInfo {
 
+  color: teal;
+  display: flex;
+  gap: 1rem;
+align-items: center;
+  justify-content: flex-start;
+  text-align: start;
+  box-sizing: border-box;
 }
 
-.contactIconAndInfo{
-    padding: 0px;
-    margin: 0px;
-    color: teal;
-   display: flex;
-   gap: 1rem;
-   align-items: center;
-   justify-content: center;
-   justify-items: center;
-}
-.contactContainer{
-    margin: 0px;
-    margin-block: 2rem;
-    display: grid;
-    gap: 1rem;
-    justify-content: start;
-    justify-items: start;
-    padding: 0px;
-    
-
-
+.contactContainer {
+  margin: 0px;
+  margin-block: 2rem;
+  display: grid;
+  gap: 1rem;
+  justify-content: start;
+  justify-items: start;
+  padding: 0px;
+text-align: start;
 }

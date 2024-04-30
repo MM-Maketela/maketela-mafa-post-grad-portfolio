@@ -30,7 +30,7 @@ export const Contact = () => {
         <div  className={classes.contactInfo}>
         <h1 style={{color:'teal', fontSize:'2rem', textAlign:'start'}}>GET IN TOUCH</h1>
 
-        <p style={{fontSize:'1.5rem', textAlign:'start'}}>
+        <p style={{fontSize:'1.5rem', textAlign:'start', marginLeft:"0px"}}>
         Lorem ipsum dolor sit amet consectetur adipisicing elit.
         Facilis dolorum dolorem soluta quidem expedita aperiam aliquid at.
         Totam magni ipsum suscipit amet? Autem nemo esse laboriosam ratione
