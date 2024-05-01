@@ -6,22 +6,20 @@ export const Navigation = () => {
     <nav className={classes.nav}  >
       <ul className={classes.navList}>
         <li>
-          <button >HOME</button>
+          <a >HOME</a>
         </li>
         <li>
-          <button >ABOUT</button>
+          <a >ABOUT</a>
         </li>
         <li>
-          <button >SERVICES</button>
+          <a >SERVICES</a>
         </li>
         <li>
-          <button >WORK</button>
+          <a >WORK</a>
         </li>
+        
         <li>
-          <button >BLOG</button>
-        </li>
-        <li>
-          <button >CONTACT</button>
+          <a >CONTACT</a>
         </li>
       </ul>
     </nav>
