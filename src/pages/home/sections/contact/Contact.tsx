@@ -41,15 +41,15 @@ export const Contact = () => {
       
             <ul className={classes.contactContainer}>
               <li className={classes.contactIconAndInfo}>
-                  <CiLocationOn  size={20}/>  <p> 329 WASHINGTON ST BOSTON, MA 02108</p>
+                  <CiLocationOn  size={20}/>  <p> Intongomane st, Greenville Fisantekraal 7550</p>
               </li>
 
               <li  className={classes.contactIconAndInfo}>
-                <BiPhoneCall   size={20}/>  <p>(617) 557-0089</p>
+                <BiPhoneCall   size={20}/>  <p>(+27) 73 187 4276</p>
               </li>
 
               <li  className={classes.contactIconAndInfo}>
-                <TfiEmail size={20}/><p>contact@example.com</p>
+                <TfiEmail size={20}/><p>maketelamafa2@gmail.com</p>
               </li>
             </ul>
       
