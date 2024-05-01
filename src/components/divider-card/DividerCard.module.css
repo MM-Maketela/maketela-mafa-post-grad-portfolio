@@ -3,6 +3,9 @@
     min-width: 10rem;
     min-height: 10rem;
     display: grid;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
     
 }
 
@@ -17,5 +20,4 @@
     justify-content: center;
     justify-items: center;
     align-items: center;
-    
 }

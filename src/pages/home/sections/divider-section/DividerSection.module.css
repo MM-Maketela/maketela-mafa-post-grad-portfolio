@@ -2,7 +2,7 @@
     height: 25rem;
     background-color: rgb(96, 125, 139, .8);
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     justify-items: center;
     align-items: center;
 }
