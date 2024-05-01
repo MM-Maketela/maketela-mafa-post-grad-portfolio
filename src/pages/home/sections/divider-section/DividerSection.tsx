@@ -4,6 +4,7 @@ import { DividerCard } from "../../../../components/divider-card/DividerCard";
 import { IoMdTime } from "react-icons/io";
 import { RiTeamLine } from "react-icons/ri";
 import { LiaProjectDiagramSolid } from "react-icons/lia";
+import { LiaAngleDownSolid } from "react-icons/lia";
 const size = 50;
 
 export const DividerSection = () => {
