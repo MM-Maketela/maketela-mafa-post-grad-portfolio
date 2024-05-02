@@ -4,6 +4,7 @@
   box-shadow: 1px 1px 1rem teal;
   display: grid;
   align-items: center;
+  padding-block: 4rem;
 }
 .contactCard {
   width: 80%;
@@ -109,4 +110,11 @@ text-align: start;
 }
 .socialMediaIcon>a{
   color: teal;
+}
+@media screen and (max-width: 1200px) {
+  .contactCard{
+      grid-template-columns: repeat(1,1fr);
+     
+  }
+
 }

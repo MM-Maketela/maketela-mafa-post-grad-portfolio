@@ -15,14 +15,14 @@
     row-gap: 2.5rem;
 }
 
-@media screen  and (min-width: 800px) and (max-width: 1200px) {
+@media screen  and (min-width: 750px) and (max-width: 1200px) {
     .servicesCards{
         grid-template-columns: repeat(2,1fr);
     }
 
   }
 
-  @media screen and (max-width: 799px) {
+  @media screen and (max-width: 749px) {
     .servicesCards{
         grid-template-columns: repeat(1,1fr);
     }
