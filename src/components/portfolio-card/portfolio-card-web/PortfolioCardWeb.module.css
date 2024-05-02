@@ -3,4 +3,48 @@
     min-height: 20rem;
     background-color: rgba(127, 255, 212, 0.1);
     box-shadow: 1px 1px 5px rgba(0, 0, 255, 0.2);
+    display: flex;
+    flex-direction: column;
+}
+
+.textContainer{
+    box-sizing: border-box;
+    flex-grow: 1;
+    padding: 0rem .4rem .4rem .4rem;
+
+    display: flex;
+    flex-direction: column;
+}
+.projectName{
+    font-size: 1.3rem;
+}
+
+
+.tool > *{
+    
+    width: 20px;
+    height: 20px;
+}
+.tool{
+    width: fit-content;
+    height: fit-content;
+    margin: 0px;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: teal;
+    color: white;
+
+}
+.listOfTools{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: start;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    align-items: center;
+    justify-items: center;
+    gap: .4rem;
+
+
 }
