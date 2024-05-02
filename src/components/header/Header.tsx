@@ -36,20 +36,31 @@ export const Header = () => {
             </div>
           </a>
           <li>
+            <a  target="_blank" href="https://wa.me/+27712208870/?text=Hello Mafa, I have been directed by the portfolio.">
             <MdWhatsapp size={20} className={classes.contactListItem} />{" "}
+            </a>
+            
           </li>
           <li>
+            <a  target="_blank"  href="https://www.facebook.com/profile.php?id=100086971557256">
             <MdFacebook size={20} className={classes.contactListItem} />{" "}
+
+            </a>
           </li>
           <li>
+            <a  target="_blank" href="https://www.linkedin.com/in/mafa-maketela-b8b8981b8/">
             <AiOutlineLinkedin size={20} className={classes.contactListItem} />{" "}
+            </a>
           </li>
           <li>
             {" "}
+            <a  target="_blank" href="https://github.com/MM-Maketela">
             <AiOutlineGithub
               size={20}
               className={classes.contactListItem}
-            />{" "}
+            />
+            </a>
+            {" "}
           </li>
         </ul>
       </div>

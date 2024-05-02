@@ -107,3 +107,6 @@ align-items: center;
   padding: 0px;
 text-align: start;
 }
+.socialMediaIcon>a{
+  color: teal;
+}

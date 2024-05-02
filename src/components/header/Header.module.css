@@ -35,3 +35,8 @@
     width: 30%;
     margin-right: 0px;
 }
+
+.contactList>li>a{
+    outline: none;
+    color: white;
+}
