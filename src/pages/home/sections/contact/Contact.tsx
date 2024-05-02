@@ -11,7 +11,7 @@ import { BiPhoneCall } from "react-icons/bi";
 export const Contact = () => {
   const size = 25;
   return (
-    <div className={classes.contact}>
+    <div id="contact" className={classes.contact}>
       <div className={classes.contactCard}>
         <form className={classes.form}>
           <h1 style={{ color: "teal", fontSize: "2rem", textAlign: "start" }}>SEND MAFA A MESSAGE</h1>
@@ -25,7 +25,7 @@ export const Contact = () => {
         <div className={classes.contactInfo}>
           <h1 style={{ color: "teal", fontSize: "2rem", textAlign: "start" }}>GET IN TOUCH</h1>
 
-          <p style={{ fontSize: "1.5rem", textAlign: "start", marginLeft: "0px" }}>Feel free to utilize either the form provided or our social media links to reach out for any inquiries. I am here to assist you promptly and look forward to connecting with you!</p>
+          <p style={{ fontSize: "1.5rem", textAlign: "start", marginLeft: "0px" }}>Thank you for considering reaching out. Should you wish to contact me, please utilize the provided contact form or conveniently connect with me via our social media platforms by clicking on the respective logos. I appreciate your interest and eagerly anticipate the opportunity to engage with you.</p>
 
           <ul className={classes.contactContainer}>
             <li className={classes.contactIconAndInfo}>
@@ -44,7 +44,7 @@ export const Contact = () => {
 
           <ul className={classes.iconContainer}>
             <li className={classes.socialMediaIcon}>
-              <a target="_blank"  href="https://www.facebook.com/profile.php?id=100086971557256">
+              <a target="_blank" href="https://www.facebook.com/profile.php?id=100086971557256">
                 <CiFacebook size={size} />
               </a>
             </li>

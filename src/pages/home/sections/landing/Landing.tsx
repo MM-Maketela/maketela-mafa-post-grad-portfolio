@@ -3,7 +3,7 @@ import classes from "./Landing.module.css";
 import Typewriter from "typewriter-effect";
 export const Landing = () => {
   return (
-    <div className={classes.landing}>
+    <div  id="home" className={classes.landing}>
       <div className={classes.heroText}>
         <h1 className={classes.mafaName}>Mafa Maketela</h1>
 

@@ -13,3 +13,12 @@ button {
     color: inherit;
     cursor: pointer;
 }
+.anchor{
+    color: white;
+    text-decoration: none;
+    
+    
+}
+.anchor:focus{
+    color: blue;
+}

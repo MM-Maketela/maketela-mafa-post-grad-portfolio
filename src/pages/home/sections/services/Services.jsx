@@ -11,7 +11,7 @@ import { TbReportAnalytics } from "react-icons/tb";
 export const Services = () => {
   const size = 80;
   return (
-    <div className={classes.services}>
+    <div id="services" className={classes.services}>
       <div style={{ marginBottom: "2rem" }}>
         <SubHeader heading="SERVICES" subText="Embrace the opportunity to leverage my versatile skill set, tailored to seamlessly elevate your project to new heights, ensuring unparalleled success and satisfaction." />
       </div>
