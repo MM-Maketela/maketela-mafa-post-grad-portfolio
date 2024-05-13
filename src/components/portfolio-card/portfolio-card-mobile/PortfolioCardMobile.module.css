@@ -1,7 +1,7 @@
 .portfolioCardMobile {
   min-width: 20rem;
   min-height: 20rem;
-  background-color: rgba(127, 255, 212, 0.1);
+  background-color: rgb(1, 77, 78,.1);
   box-shadow: 1px 1px 5px rgba(0, 0, 255, 0.2);
   display: grid;
   grid-template-columns: 60% 40%;
@@ -30,7 +30,7 @@
 }
 .tool {
   padding: 5px;
-  background-color: teal;
+  background-color: rgb(1, 77, 78,1);
   border-radius: 50%;
   margin: 0px;
 }

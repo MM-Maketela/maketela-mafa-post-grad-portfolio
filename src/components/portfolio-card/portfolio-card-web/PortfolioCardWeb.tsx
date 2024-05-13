@@ -25,7 +25,7 @@ export const PortfolioCardWeb: React.FC<WebCardProps> = ({ name, image, repoLink
 
       <div className={classes.textContainer}>
         <h1 className={classes.projectName}>{name}</h1>
-        <p style={{ fontSize: "1rem", textAlign: "start",color:"teal", padding: "0px", margin: "0px" }}>Developers: {numberOfDevs}</p>
+        <p style={{ fontSize: "1rem", textAlign: "start",color:"rgb(1, 77, 78,1)", padding: "0px", margin: "0px" }}>Developers: {numberOfDevs}</p>
         <div style={{ flexGrow: "1" }}></div>
         <div style={{ display: "flex" }}>
           <ul className={classes.listOfTools}>

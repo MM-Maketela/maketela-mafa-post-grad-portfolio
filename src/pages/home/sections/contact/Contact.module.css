@@ -1,14 +1,14 @@
 .contact {
   min-height: 100vh;
-  background-color: rgba(0, 128, 128, 0.8);
-  box-shadow: 1px 1px 1rem teal;
+  background-color: rgb(1, 77, 78,.9);
+  box-shadow: 1px 1px 1rem #014d4e;
   display: grid;
   align-items: center;
   padding-block: 4rem;
 }
 .contactCard {
   width: 80%;
-  background-color: rgba(255, 255, 255);
+  background-color: rgba(255, 255, 255, .045);
   backdrop-filter: blur(5px);
   margin-inline: auto;
   display: grid;
@@ -48,9 +48,9 @@ input {
 .textArea,
 .input {
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 128, 128, 0.3);
   backdrop-filter: blur(5px);
-  color: teal;
+  color: white;
   box-sizing: border-box;
   /* border: 4px solid rgba(0, 128, 128, 0.4); */
   resize: vertical;
@@ -70,13 +70,13 @@ input {
 .socialMediaIcon {
   margin: 0px;
   padding: 0.5rem;
-  border: 8px solid teal;
+  border: 8px solid white;
   border-radius: 50%;
   display: grid;
   justify-content: center;
   justify-items: center;
   align-items: center;
-  color: teal;
+  color: white;
   cursor: pointer;
 }
 
@@ -89,7 +89,7 @@ input {
 }
 .contactIconAndInfo {
 
-  color: teal;
+  color: white;
   display: flex;
   gap: 1rem;
 align-items: center;
@@ -109,7 +109,7 @@ align-items: center;
 text-align: start;
 }
 .socialMediaIcon>a{
-  color: teal;
+  color: white;
 }
 @media screen and (max-width: 1200px) {
   .contactCard{

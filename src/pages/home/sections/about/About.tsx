@@ -7,6 +7,7 @@ export const About = () => {
         <div className={classes.image}></div>
       </div>
       <div className={classes.aboutMeInfo}>
+        <h1 style={{color:"rgb(1, 77, 78,1)"}}>About Mafa</h1>
       My name is Mafa Maketela, and I hail from Matatiele in the Eastern Cape. From a young age, I've been captivated by the world of computers and technology. This fascination led me on a journey to pursue a Bachelor of Science degree in Computer Science at the University of the Western Cape.<br/><br/>
 
 Growing up, my household had limited access to technology, but that didn't deter my curiosity. I sought out opportunities to learn about programming and software development wherever I could find them. Despite the challenges, I spent countless hours watching tutorials on YouTube, absorbing knowledge about building websites, e-commerce platforms, and more.<br/><br/>

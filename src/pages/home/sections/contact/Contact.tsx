@@ -14,7 +14,7 @@ export const Contact = () => {
     <div id="contact" className={classes.contact}>
       <div className={classes.contactCard}>
         <form className={classes.form}>
-          <h1 style={{ color: "teal", fontSize: "2rem", textAlign: "start" }}>SEND MAFA A MESSAGE</h1>
+          <h1 style={{ color: "rgb(255, 255, 255)", fontSize: "2rem", textAlign: "start" }}>SEND MAFA A MESSAGE</h1>
 
           <input className={classes.input} placeholder="Full name" id="name" name="name" />
           <input className={classes.input} placeholder="Email" id="email" name="email" />
@@ -23,7 +23,7 @@ export const Contact = () => {
           <textarea id="textarea" name="text" className={classes.textArea}></textarea>
         </form>
         <div className={classes.contactInfo}>
-          <h1 style={{ color: "teal", fontSize: "2rem", textAlign: "start" }}>GET IN TOUCH</h1>
+          <h1 style={{ color: "rgb(255, 255, 255)", fontSize: "2rem", textAlign: "start" }}>GET IN TOUCH</h1>
 
           <p style={{ fontSize: "1.5rem", textAlign: "start", marginLeft: "0px" }}>Thank you for considering reaching out. Should you wish to contact me, please utilize the provided contact form or conveniently connect with me via our social media platforms by clicking on the respective logos. I appreciate your interest and eagerly anticipate the opportunity to engage with you.</p>
 

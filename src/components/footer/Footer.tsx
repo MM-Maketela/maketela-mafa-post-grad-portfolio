@@ -2,8 +2,8 @@ import React from 'react'
 
 export const Footer = () => {
   return (
-    <div  style={{backgroundColor:'teal', paddingBlock:'1px', color:'white',
-      boxShadow:'1px 1px 10px teal'
+    <div  style={{backgroundColor:'rgb(1, 77, 78,1)', paddingBlock:'1px', color:'white',
+      boxShadow:'1px 1px 10px rgb(1, 77, 78,1)'
     }}>
 
     <h3>

@@ -19,7 +19,7 @@ export const PortfolioCardMobile: React.FC<MobileCardProps> = ({image, name, use
         </div>
         <div  className={classes.text}>
           <h1 className={classes.projectName}>{name}</h1>
-          <p style={{fontSize:"1rem", marginInline:"auto", textAlign:"center" , color:"teal"}}>
+          <p style={{fontSize:"1rem", marginInline:"auto", textAlign:"center" , color:"rgb(1, 77, 78,1)"}}>
             Developers: {numberOfDevs}
           </p>
 
