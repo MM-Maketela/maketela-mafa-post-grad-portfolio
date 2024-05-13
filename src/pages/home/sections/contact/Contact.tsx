@@ -25,27 +25,26 @@ export const Contact = () => {
         <div className={classes.contactInfo}>
           <h1 style={{ color: "rgb(255, 255, 255)", fontSize: "2rem", textAlign: "start" }}>GET IN TOUCH</h1>
 
-          <p style={{ fontSize: "1.5rem", textAlign: "start", marginLeft: "0px" }}>Thank you for considering reaching out. Should you wish to contact me, please utilize the provided contact form or conveniently connect with me via our social media platforms by clicking on the respective logos. I appreciate your interest and eagerly anticipate the opportunity to engage with you.</p>
+          <p style={{ fontSize: "1.5rem", textAlign: "start", marginLeft: "0px", color:"rgb(255, 255, 255, .7)" }}>Thank you for considering reaching out. Should you wish to contact me, please utilize the provided contact form or conveniently connect with me via our social media platforms by clicking on the respective logos. I appreciate your interest and eagerly anticipate the opportunity to engage with you.</p>
 
           <ul className={classes.contactContainer}>
             <li className={classes.contactIconAndInfo}>
-              <CiLocationOn size={20} /> <p> Intongomane st, Greenville Fisantekraal 7550</p>
+              <CiLocationOn size={20} /> <p style={{color:"rgb(255, 255, 255, .7)"}}> Intongomane st, Greenville Fisantekraal 7550</p>
             </li>
 
             <li className={classes.contactIconAndInfo}>
-              <BiPhoneCall size={20} /> <p>(+27) 73 187 4276</p>
+              <BiPhoneCall size={20} /> <p style={{color:"rgb(255, 255, 255, .7)"}}>(+27) 73 187 4276</p>
             </li>
 
             <li className={classes.contactIconAndInfo}>
               <TfiEmail size={20} />
-              <p>maketelamafa2@gmail.com</p>
+              <p style={{color:"rgb(255, 255, 255, .7)"}}>maketelamafa2@gmail.com</p>
             </li>
           </ul>
-
-          <ul className={classes.iconContainer}>
-            <li className={classes.socialMediaIcon}>
+          <ul className = {classes.iconContainer}>
+            <li className = {classes.socialMediaIcon}>
               <a target="_blank" href="https://www.facebook.com/profile.php?id=100086971557256">
-                <CiFacebook size={size} />
+                <CiFacebook size={size}/>
               </a>
             </li>
             <li className={classes.socialMediaIcon}>
