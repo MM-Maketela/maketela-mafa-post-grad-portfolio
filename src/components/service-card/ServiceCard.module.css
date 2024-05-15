@@ -9,6 +9,7 @@
     flex-direction: column;
     justify-content: center;
     text-align: start;
+    box-sizing: border-box;
 
 
 
