@@ -5,6 +5,7 @@
   display: grid;
   align-items: center;
   padding-block: 4rem;
+  padding-inline: 1rem;
 }
 .contactCard {
   width: 80%;
@@ -30,6 +31,7 @@
 .form {
   width: 90%;
   height: 90%;
+  margin-block: 1rem;
 }
 
 .contactInfo {
@@ -70,8 +72,9 @@ input {
 }
 .socialMediaIcon {
   margin: 0px;
-  padding: 0.5rem;
-  border: 8px solid white;
+  padding: 0.4rem;
+  
+  border: 6px solid white;
   border-radius: 50%;
   display: grid;
   justify-content: center;
@@ -79,6 +82,11 @@ input {
   align-items: center;
   color: white;
   cursor: pointer;
+  
+}
+.icon{
+  width: 25px;
+  height: 25px;
 }
 
 
@@ -97,9 +105,12 @@ align-items: center;
   justify-content: flex-start;
   text-align: start;
   box-sizing: border-box;
+ 
 }
 
+
 .contactContainer {
+ 
   margin: 0px;
   margin-block: 2rem;
   display: grid;
@@ -118,4 +129,23 @@ text-align: start;
      
   }
 
+}
+
+@media screen and (max-width: 500px) {
+  .icon{
+    width: 15px;
+    height: 15px;
+  }
+
+  @media screen and (max-width:400px) {
+    .contactIconAndInfo{
+      display: grid;
+      grid-template-columns: auto;
+      justify-content: start;
+      
+     
+    }
+    
+    
+  }
 }

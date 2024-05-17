@@ -15,7 +15,7 @@ export const ServiceCard: React.FC<ServiceCardProps> = ({ heading1, text1, Icon 
       <div className={classes.icon}>{Icon}</div>
 
       <div style={{ flexGrow: "1" }}>
-        <h1 style={{ fontSize: "1.2rem", textAlign: "center" }}>{headerText.toUpperCase()}</h1>
+        <h1 style={{ fontSize: "1rem", textAlign: "center" }}>{headerText.toUpperCase()}</h1>
         <div>
           <ul style={{ margin: "1rem 0rem 0rem 0rem", padding: "0px", listStyle: "none", display: "grid", gap: ".2rem", fontSize: "1rem", color: "rgb(1, 77, 78,.7)", fontWeight: "200" }}>
             {text1?.map(
