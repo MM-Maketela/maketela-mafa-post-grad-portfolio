@@ -1,12 +1,13 @@
 h1{
     margin: 0px;
     color:rgb(1, 77, 78,1);
-    font-size: 3rem;
+    font-size: calc(2vw + 18px);
+
 }
 p{
     margin: 0px;
     margin-top: .5rem;
-    font-size: 1.4rem;
+    font-size: calc(.5vw + 14px);
     width: 80%;
     margin-inline: auto;
     color: rgba(1, 77, 78, 0.7);
