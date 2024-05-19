@@ -6,9 +6,19 @@
     z-index: 1;
     background-color: inherit;
     color: white;
-    display: grid;
+    
     padding-block: 1rem;
 
+}
+.wrapperForSmallDevices{
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    padding: 2rem;
+    cursor: pointer;
+}
+.wrapperForBiggerScreens{
+    display: grid;
 }
 .contactListItem{
     cursor: pointer;
