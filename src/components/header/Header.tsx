@@ -13,23 +13,18 @@ import { BsPersonLinesFill } from "react-icons/bs";
 export const Header = () => {
   const [changeColor, setChangeColor] = useState(false);
   const [changeHeader, setChangeHeader] = useState(false);
-  const [width, setWidth] = useState(window.innerWidth);
   const [showMenu, setShowMenu] = useState(false);
 
-  function handleView() {
-    setChangeHeader(width <= 900);
-  }
+  useEffect(()=>{
+    setChangeHeader(window.innerWidth <= 900);
+  },[])
 
-  function handleMenu() {}
-  useEffect(() => {
-    handleView();
-  }, []);
+
 
   function windowScrolling() {
     window.scrollY >= 1 ? setChangeColor(true) : setChangeColor(false);
   }
   window.addEventListener("scroll", windowScrolling);
-  window.addEventListener("resize", handleView);
 
   return (
     <header className={classes.header} style={{ backgroundColor: changeColor ? "rgb(96, 125, 139)" : "rgb(96, 125, 139)" }}>
