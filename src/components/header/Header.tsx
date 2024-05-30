@@ -1,12 +1,13 @@
 import React, { ReactNode, useEffect, useState } from "react";
 import classes from "./Header.module.css";
 import { Navigation } from "../navigation/Navigation";
-import { MdWhatsapp, MdFacebook, MdMenu,MdHome,MdMiscellaneousServices, } from "react-icons/md";
+import { MdWhatsapp, MdFacebook, MdMenu,MdHome,MdMiscellaneousServices, MdContacts} from "react-icons/md";
 import { AiOutlineLinkedin, AiOutlineGithub } from "react-icons/ai";
 import { FaExternalLinkAlt,FaProjectDiagram } from "react-icons/fa";
 import { DropDownMenu } from "../drop-down-menu/DropDownMenu";
 import { MenuItem } from "../menu-item/MenuItem";
 import { BsPersonLinesFill } from "react-icons/bs";
+
 
 
 export const Header = () => {
@@ -47,7 +48,7 @@ export const Header = () => {
               <MenuItem Icon={BsPersonLinesFill} label="About" />
               <MenuItem Icon={MdMiscellaneousServices} label="Services" />
               <MenuItem Icon={FaProjectDiagram} label="Portfolio" />
-              <MenuItem Icon={MdFacebook} label="Contact" />
+              <MenuItem Icon={MdContacts} label="Contact" />
             </DropDownMenu>
           </span>
         </div>
