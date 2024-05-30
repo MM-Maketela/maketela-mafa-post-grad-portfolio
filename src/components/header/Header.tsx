@@ -1,7 +1,7 @@
 import React, { ReactNode, useEffect, useState } from "react";
 import classes from "./Header.module.css";
 import { Navigation } from "../navigation/Navigation";
-import { MdWhatsapp, MdFacebook, MdMenu,MdHome,MdMiscellaneousServices, } from "react-icons/md";
+import { MdWhatsapp, MdFacebook, MdMenu,MdHome,MdMiscellaneousServices, MdContacts} from "react-icons/md";
 import { AiOutlineLinkedin, AiOutlineGithub } from "react-icons/ai";
 import { FaExternalLinkAlt,FaProjectDiagram } from "react-icons/fa";
 import { DropDownMenu } from "../drop-down-menu/DropDownMenu";
@@ -9,26 +9,22 @@ import { MenuItem } from "../menu-item/MenuItem";
 import { BsPersonLinesFill } from "react-icons/bs";
 
 
+
 export const Header = () => {
   const [changeColor, setChangeColor] = useState(false);
   const [changeHeader, setChangeHeader] = useState(false);
-  const [width, setWidth] = useState(window.innerWidth);
   const [showMenu, setShowMenu] = useState(false);
 
-  function handleView() {
-    setChangeHeader(width <= 900);
-  }
+  useEffect(()=>{
+    setChangeHeader(window.innerWidth <= 900);
+  },[])
 
-  function handleMenu() {}
-  useEffect(() => {
-    handleView();
-  }, []);
+
 
   function windowScrolling() {
     window.scrollY >= 1 ? setChangeColor(true) : setChangeColor(false);
   }
   window.addEventListener("scroll", windowScrolling);
-  window.addEventListener("resize", handleView);
 
   return (
     <header className={classes.header} style={{ backgroundColor: changeColor ? "rgb(96, 125, 139)" : "rgb(96, 125, 139)" }}>
@@ -47,7 +43,7 @@ export const Header = () => {
               <MenuItem Icon={BsPersonLinesFill} label="About" />
               <MenuItem Icon={MdMiscellaneousServices} label="Services" />
               <MenuItem Icon={FaProjectDiagram} label="Portfolio" />
-              <MenuItem Icon={MdFacebook} label="Contact" />
+              <MenuItem Icon={MdContacts} label="Contact" />
             </DropDownMenu>
           </span>
         </div>
