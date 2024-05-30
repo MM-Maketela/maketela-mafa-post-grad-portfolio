@@ -20,7 +20,7 @@ export const ServiceCard: React.FC<ServiceCardProps> = ({ heading1, text1, Icon 
           <ul style={{ margin: "1rem 0rem 0rem 0rem", padding: "0px", listStyle: "none", display: "grid", gap: ".2rem", fontSize: "1rem", color: "rgb(1, 77, 78,.7)", fontWeight: "200" }}>
             {text1?.map(
               (element: string, index: number): ReactNode => (
-                <li id={`${index}`}>{element}</li>
+                <li key={`${index}`}>{element}</li>
               )
             )}
           </ul>

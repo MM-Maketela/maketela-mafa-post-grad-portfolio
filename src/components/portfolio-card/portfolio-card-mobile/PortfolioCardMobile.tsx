@@ -34,7 +34,7 @@ export const PortfolioCardMobile: React.FC<MobileCardProps> = ({image, name, use
 
           <ul className={classes.listOfTools}>
             {
-            usedTools.map((element, index)=>(<li id={index.toString()} className={classes.tool}>
+            usedTools.map((element, index)=>(<li key={index.toString()} className={classes.tool}>
 
               {element}
 

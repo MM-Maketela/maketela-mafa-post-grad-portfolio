@@ -1,52 +1,51 @@
-.header{
-    position:fixed;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    z-index: 1;
-    background-color: inherit;
-    color: white;
-    
-    padding-block: 1rem;
-
+.header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 1;
+  background-color: rgb(96, 125, 139);
+  color: white;
+  position: relative;
 }
-.wrapperForSmallDevices{
-    color: white;
-    display: flex;
-    justify-content: flex-end;
-    padding: 2rem;
-    cursor: pointer;
+.wrapperForSmallDevices {
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem;
+  cursor: pointer;
 }
-.wrapperForBiggerScreens{
-    display: grid;
+.menu {
+  width: var(--icon-size);
+  height: var(--icon-size);
 }
-.contactListItem{
-    cursor: pointer;
-    border: 8px solid rgba(255, 255, 255, 0.1);
-    padding: .4rem;
-    border-radius: 50%;
-
-
+.wrapperForBiggerScreens {
+  display: grid;
+}
+.contactListItem {
+  cursor: pointer;
+  border: 8px solid rgba(255, 255, 255, 0.1);
+  padding: 0.4rem;
+  border-radius: 50%;
 }
 .contactList {
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
-    gap: 1rem;
-    padding-inline: 2rem;
-    margin: 0px;
-    align-items: center;
-   
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  padding-inline: 2rem;
+  margin: 0px;
+  align-items: center;
 }
 .divider {
-    height: 4px;
-    background-color: rgba(255, 255, 255, 0.05);
-    margin-block:.5rem;
-    width: 30%;
-    margin-right: 0px;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.05);
+  margin-block: 0.5rem;
+  width: 30%;
+  margin-right: 0px;
 }
 
-.contactList>li>a{
-    outline: none;
-    color: white;
+.contactList > li > a {
+  outline: none;
+  color: white;
 }

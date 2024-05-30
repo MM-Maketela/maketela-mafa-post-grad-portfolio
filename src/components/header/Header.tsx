@@ -4,67 +4,59 @@ import { Navigation } from "../navigation/Navigation";
 import { MdWhatsapp, MdFacebook, MdMenu } from "react-icons/md";
 import { AiOutlineLinkedin, AiOutlineGithub } from "react-icons/ai";
 import { FaExternalLinkAlt } from "react-icons/fa";
-
-import Select, { components } from 'react-select';
-import { FaChevronDown } from 'react-icons/fa';
-
-
-
-
-
-
-
-const customStyles = {
-  control: (provided: object) => ({
-    ...provided,
-    // Customize other parts of the control if needed
-  }),
-  // Customize other parts of the select if needed
-};
-
-const options = [
-  { value: 'chocolate', label: 'Chocolate' },
-  { value: 'strawberry', label: 'Strawberry' },
-  { value: 'vanilla', label: 'Vanilla' },
-];
-
-const DropdownIndicator = (props:object) => {
-  return (
-    <components.DropdownIndicator {...props}>
-      <FaChevronDown />
-    </components.DropdownIndicator>
-  );
-};
-
-const customComponents = {
-  DropdownIndicator,
-};
+import { DropDownMenu } from "../drop-down-menu/DropDownMenu";
+import { MenuItem } from "../menu-item/MenuItem";
 
 
 export const Header = () => {
   const [changeColor, setChangeColor] = useState(false);
   const [changeHeader, setChangeHeader] = useState(false);
-  const [selectedOption, setSelectedOption] = useState(null);
+  const [width, setWidth] = useState(window.innerWidth);
+  const [showMenu, setShowMenu] =  useState(false)
 
-  function handleHeaderChange() {
-    window.innerWidth <= 975 ? setChangeHeader(true) : setChangeHeader(false);
+  function handleView(){
+    setChangeHeader(width <= 900)
   }
+
+  function handleMenu(){
+
+  }
+  useEffect(()=>{
+    handleView()
+  },[])
+
   function windowScrolling() {
     window.scrollY >= 1 ? setChangeColor(true) : setChangeColor(false);
   }
   window.addEventListener("scroll", windowScrolling);
-  window.addEventListener("resize", handleHeaderChange);
-  
+  window.addEventListener("resize", handleView)
 
   return (
-    <header className={classes.header} style={{ backgroundColor: changeColor ? "rgb(96, 125, 139)" : "inherit" }}>
+    <header
+      className={classes.header}
+      style={{ backgroundColor: changeColor ? "rgb(96, 125, 139)" : "rgb(96, 125, 139)" }}
+    >
       {changeHeader ? (
         <div className={classes.wrapperForSmallDevices}>
-        <Select
-        defaultValue={selectedOption}
-          // onChange={setSelectedOption}
-        options={options}
-      />
+          
+          <span>
+          <MdMenu   className={classes.menu} onClick={()=>{ 
+            let dropdown = document.getElementById("dropDownMenu")
+            cons
+            if (dropdown) {
+              dropdown.classList.add('showMenu');
+              console.log("added class")
+            }
+          setTimeout(function() {
+            setShowMenu(!showMenu)
+        }, 2000);
+            }}/>
+          {showMenu ?  <DropDownMenu>
+            <MenuItem  Icon={MdFacebook}  label="facebook"/>
+            <MenuItem  Icon={MdFacebook}  label="facebook"/>
+            <MenuItem  Icon={MdFacebook}  label="facebook"/>
+          </DropDownMenu>:<div></div>}
+          </span>
         </div>
       ) : (
         <div className={classes.wrapperForBiggerScreens}>
@@ -89,24 +81,46 @@ export const Header = () => {
                 </div>
               </a>
               <li>
-                <a target="_blank" href="https://wa.me/+27712208870/?text=Hello Mafa, I have been directed by the portfolio." rel="noreferrer">
+                <a
+                  target="_blank"
+                  href="https://wa.me/+27712208870/?text=Hello Mafa, I have been directed by the portfolio."
+                  rel="noreferrer"
+                >
                   <MdWhatsapp size={20} className={classes.contactListItem} />{" "}
                 </a>
               </li>
               <li>
-                <a target="_blank" href="https://www.facebook.com/profile.php?id=100086971557256" rel="noreferrer">
+                <a
+                  target="_blank"
+                  href="https://www.facebook.com/profile.php?id=100086971557256"
+                  rel="noreferrer"
+                >
                   <MdFacebook size={20} className={classes.contactListItem} />{" "}
                 </a>
               </li>
               <li>
-                <a target="_blank" href="https://www.linkedin.com/in/mafa-maketela-b8b8981b8/" rel="noreferrer">
-                  <AiOutlineLinkedin size={20} className={classes.contactListItem} />{" "}
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/in/mafa-maketela-b8b8981b8/"
+                  rel="noreferrer"
+                >
+                  <AiOutlineLinkedin
+                    size={20}
+                    className={classes.contactListItem}
+                  />{" "}
                 </a>
               </li>
               <li>
                 {" "}
-                <a target="_blank" href="https://github.com/MM-Maketela" rel="noreferrer">
-                  <AiOutlineGithub size={20} className={classes.contactListItem} />
+                <a
+                  target="_blank"
+                  href="https://github.com/MM-Maketela"
+                  rel="noreferrer"
+                >
+                  <AiOutlineGithub
+                    size={20}
+                    className={classes.contactListItem}
+                  />
                 </a>{" "}
               </li>
             </ul>

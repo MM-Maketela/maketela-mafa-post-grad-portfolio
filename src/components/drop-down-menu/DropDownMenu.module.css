@@ -1,0 +1,35 @@
+.dropDownMenu{
+    background-color: red;
+    min-width: 10rem;
+    display: grid;
+    gap: 8px;
+    position: absolute;
+    top:100%;
+    right: 1rem;
+    overflow: hidden;
+    z-index: 1;
+}
+@keyframes show-menu-animation {
+    0%   {height: 0rem;}
+    25%  {height: 2rem;}
+    50%  {height: 6rem;}
+    100% {height: 10rem;}
+  }
+  @keyframes hide-menu-animation {
+    0%   {height: 10rem;}
+    25%  {height: 6rem;}
+    50%  {height: 2rem;}
+    100% {height: 0rem;}
+  }
+.showMenu{
+    animation: show-menu-animation  2s;
+    height: 10rem;
+
+}
+.hideMenu{
+
+    animation: show-menu-animation  2s;
+    height: 0rem;
+
+}
+
