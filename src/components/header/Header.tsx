@@ -1,70 +1,55 @@
 import React, { ReactNode, useEffect, useState } from "react";
 import classes from "./Header.module.css";
 import { Navigation } from "../navigation/Navigation";
-import { MdWhatsapp, MdFacebook, MdMenu } from "react-icons/md";
+import { MdWhatsapp, MdFacebook, MdMenu,MdHome,MdMiscellaneousServices, } from "react-icons/md";
 import { AiOutlineLinkedin, AiOutlineGithub } from "react-icons/ai";
-import { FaExternalLinkAlt } from "react-icons/fa";
-
-import Select, { components } from 'react-select';
-import { FaChevronDown } from 'react-icons/fa';
-
-
-
-
-
-
-
-const customStyles = {
-  control: (provided: object) => ({
-    ...provided,
-    // Customize other parts of the control if needed
-  }),
-  // Customize other parts of the select if needed
-};
-
-const options = [
-  { value: 'chocolate', label: 'Chocolate' },
-  { value: 'strawberry', label: 'Strawberry' },
-  { value: 'vanilla', label: 'Vanilla' },
-];
-
-const DropdownIndicator = (props:object) => {
-  return (
-    <components.DropdownIndicator {...props}>
-      <FaChevronDown />
-    </components.DropdownIndicator>
-  );
-};
-
-const customComponents = {
-  DropdownIndicator,
-};
+import { FaExternalLinkAlt,FaProjectDiagram } from "react-icons/fa";
+import { DropDownMenu } from "../drop-down-menu/DropDownMenu";
+import { MenuItem } from "../menu-item/MenuItem";
+import { BsPersonLinesFill } from "react-icons/bs";
 
 
 export const Header = () => {
   const [changeColor, setChangeColor] = useState(false);
   const [changeHeader, setChangeHeader] = useState(false);
-  const [selectedOption, setSelectedOption] = useState(null);
+  const [width, setWidth] = useState(window.innerWidth);
+  const [showMenu, setShowMenu] = useState(false);
 
-  function handleHeaderChange() {
-    window.innerWidth <= 975 ? setChangeHeader(true) : setChangeHeader(false);
+  function handleView() {
+    setChangeHeader(width <= 900);
   }
+
+  function handleMenu() {}
+  useEffect(() => {
+    handleView();
+  }, []);
+
   function windowScrolling() {
     window.scrollY >= 1 ? setChangeColor(true) : setChangeColor(false);
   }
   window.addEventListener("scroll", windowScrolling);
-  window.addEventListener("resize", handleHeaderChange);
-  
+  window.addEventListener("resize", handleView);
 
   return (
-    <header className={classes.header} style={{ backgroundColor: changeColor ? "rgb(96, 125, 139)" : "inherit" }}>
+    <header className={classes.header} style={{ backgroundColor: changeColor ? "rgb(96, 125, 139)" : "rgb(96, 125, 139)" }}>
       {changeHeader ? (
         <div className={classes.wrapperForSmallDevices}>
-        <Select
-        defaultValue={selectedOption}
-          // onChange={setSelectedOption}
-        options={options}
-      />
+          <span>
+            <MdMenu
+              className={classes.menu}
+              onClick={() => {
+                setShowMenu(!showMenu);
+              }}
+            />
+
+          <DropDownMenu menuState = {showMenu}>
+              <MenuItem Icon={MdHome} label="Home" />
+              <MenuItem Icon={BsPersonLinesFill} label="About" />
+              <MenuItem Icon={MdMiscellaneousServices} label="Services" />
+              <MenuItem Icon={FaProjectDiagram} label="Portfolio" />
+              <MenuItem Icon={MdFacebook} label="Contact" />
+            </DropDownMenu>
+          </span>
         </div>
       ) : (
         <div className={classes.wrapperForBiggerScreens}>

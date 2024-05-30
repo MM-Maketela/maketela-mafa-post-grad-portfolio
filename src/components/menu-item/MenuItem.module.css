@@ -1,0 +1,17 @@
+.icon{
+    width: 25px;
+    height: 25px;
+}
+.menuItemWrapper{
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: start;
+    padding-inline: 8px;
+    gap: 8px;
+   
+    
+}
+.label{
+   margin: 0px;
+}

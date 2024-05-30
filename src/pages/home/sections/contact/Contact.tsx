@@ -10,7 +10,7 @@ import { BiPhoneCall } from "react-icons/bi";
 
 export const Contact = () => {
   return (
-    <div id="contact" className={classes.contact}>
+    <div id="Contact" className={classes.contact}>
       <div className={classes.contactCard}>
         <form className={classes.form}>
           <h1 style={{ color: "rgb(255, 255, 255)", fontSize: "calc(1vw + 1.2rem)", textAlign: "start" }}>SEND MAFA A MESSAGE</h1>
