@@ -6,7 +6,10 @@
   z-index: 1;
   background-color: rgb(96, 125, 139);
   color: white;
-  
+  height: 8rem;
+  box-sizing: border-box;
+  display: grid;
+  align-items: center;
 
 }
 .wrapperForSmallDevices {
@@ -15,6 +18,8 @@
   justify-content: flex-end;
   padding: 1rem;
   cursor: pointer;
+  align-items: center;
+  background-color: red;
 }
 .menu {
   width: var(--icon-size);
@@ -22,6 +27,9 @@
 }
 .wrapperForBiggerScreens {
   display: grid;
+  padding-block: 1rem;
+ 
+
 }
 .contactListItem {
   cursor: pointer;
