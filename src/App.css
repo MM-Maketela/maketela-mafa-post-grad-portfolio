@@ -3,6 +3,7 @@
   font-family: 'Times New Roman', Times, serif;
 }
 body{
+  max-width: 1400px;
   background-color: white;
   min-width: 375px;
 }

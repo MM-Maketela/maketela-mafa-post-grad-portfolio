@@ -1,47 +1,47 @@
-.landing{
-    min-height: 100vh;
-    background-image: url('../../../../assets//Mafa_image_to_edit-removebg_1.png');
-    background-size: cover;
-    background-repeat: none;
-    background-position: center;
-    position: relative;
+.landing {
+  min-height: 100vh;
+  background-image: url("../../../../assets//backgroundHero.jpg");
+  background-size: cover;
+  background-repeat: none;
+  background-position: center;
 }
-
-.heroText{
-    position: absolute;
-    top: 30%;
-    width: 50%;
-    right: 10%;
-    display: grid;
-    gap: 1.5rem;
-    text-align: start;
-    
-    
-}
-.mafaName{
-    color: rgba(255, 255, 255);
-    text-align: start;
-}
-
-.heroSummary{
-    
-    color: rgba(255, 255, 255, 0.8);
-    font-size: calc(1vw + 10px);
-    font-weight: bold;
-    text-align: start;
-    margin-left: 0px;
+.heroWrapper {
+  background-color: rgba(0, 0, 0, 0.45);
+  height: 100vh;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  padding-top: 10rem;
+  align-items: center;
+  text-align: center !important;
+  backdrop-filter: blur(10px);
 
 }
-.typeWriter{
-    display: flex;
-    position: absolute;
-    bottom:10%;
-    width: 50%;
-    right: 0px;
-    font-size: calc(1vw + 15px);
-    font-weight: bold;
-    text-align: start;
-    color: rgba(255, 255, 255, 0.8);
-    align-items: center;
-    
+
+
+.heroText {
+  display: grid;
+  gap: 1.5rem;
+  text-align: center;
+}
+.mafaName {
+  color: rgba(255, 255, 255);
+  text-align: center;
+}
+
+.heroSummary {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: calc(1vw + 10px);
+  font-weight: bold;
+  text-align: center;
+ 
+}
+.typeWriter {
+  display: flex;
+
+  font-size: calc(1vw + 15px);
+  font-weight: bold;
+  text-align: start;
+  color: rgba(255, 255, 255, 0.8);
+  align-items: center;
 }
