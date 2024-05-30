@@ -27,8 +27,8 @@ export const Header = () => {
   window.addEventListener("scroll", windowScrolling);
 
   return (
-    
-    <header className={classes.header} style={{ backgroundColor: changeColor ? "rgb(96, 125, 139)" : changeHeader ? "rgb(96, 125, 139)" : "transparent" }}>
+
+    <header  className={classes.header} style={{ backgroundColor: changeColor ? "rgb(96, 125, 139)" : changeHeader ? "rgb(96, 125, 139)" : "transparent" }}>
       {changeHeader ? (
         <div className={classes.wrapperForSmallDevices}>
           <span>

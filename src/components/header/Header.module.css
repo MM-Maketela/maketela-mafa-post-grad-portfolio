@@ -8,6 +8,8 @@
   color: white;
   height: 8rem;
   box-sizing: border-box;
+  display: grid;
+  align-items: center;
 
 }
 .wrapperForSmallDevices {
@@ -17,6 +19,7 @@
   padding: 1rem;
   cursor: pointer;
   align-items: center;
+  background-color: red;
 }
 .menu {
   width: var(--icon-size);
