@@ -49,3 +49,11 @@
   outline: none;
   color: white;
 }
+a{
+  color: white;
+  outline: none;
+  border-style: none;
+  text-decoration: none;
+  margin: 0px;
+
+}

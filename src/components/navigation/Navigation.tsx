@@ -6,20 +6,20 @@ export const Navigation = () => {
     <nav className={classes.nav}  >
       <ul className={classes.navList}>
         <li>
-          <a  href="#home" className={classes.anchor}>HOME</a>
+          <a  href="#Home" className={classes.anchor}>HOME</a>
         </li>
         <li>
-          <a href="#about" className={classes.anchor} >ABOUT</a>
+          <a href="#About" className={classes.anchor} >ABOUT</a>
         </li>
         <li>
-          <a href="#services" className={classes.anchor}>SERVICES</a>
+          <a href="#Services" className={classes.anchor}>SERVICES</a>
         </li>
         <li>
-          <a href="#portfolio" className={classes.anchor}>WORK</a>
+          <a href="#Portfolio" className={classes.anchor}>PORTFOLIO</a>
         </li>
         
         <li>
-          <a  href="#contact" className={classes.anchor}>CONTACT</a>
+          <a  href="#Contact" className={classes.anchor}>CONTACT</a>
         </li>
       </ul>
     </nav>

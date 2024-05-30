@@ -1,35 +1,44 @@
 .dropDownMenu{
-    background-color: red;
-    min-width: 10rem;
+    width: 0rem;
     display: grid;
     gap: 8px;
     position: absolute;
     top:100%;
+    height: 0rem;
     right: 1rem;
     overflow: hidden;
     z-index: 1;
+    background-color: rgba(0, 255, 255, 0.1); 
+    backdrop-filter: blur(5px);
+    box-sizing: border-box;
+    
 }
+
 @keyframes show-menu-animation {
-    0%   {height: 0rem;}
-    25%  {height: 2rem;}
-    50%  {height: 6rem;}
-    100% {height: 10rem;}
+    0%   {height: 0rem; width: 0rem;}
+    25%  {height: 6rem; width: 2rem;}
+    50%  {height: 10rem; width: 6rem;}
+    100% {height: 14rem; width: 10rem;}
   }
   @keyframes hide-menu-animation {
-    0%   {height: 10rem;}
-    25%  {height: 6rem;}
-    50%  {height: 2rem;}
-    100% {height: 0rem;}
+    0%   {height: 14rem; width: 10rem;}
+    25%  {height: 10rem; width: 6rem;}
+    50%  {height: 6rem; width: 2rem;}
+    100% {height: 0rem; width: 0rem;}
   }
-.showMenu{
-    animation: show-menu-animation  2s;
-    height: 10rem;
 
+
+.showMenu{
+
+    animation: show-menu-animation  .1s;
+    padding: .5rem;
+    height: 14rem;
+    width: 10rem;
 }
 .hideMenu{
-
-    animation: show-menu-animation  2s;
-    height: 0rem;
+  animation: hide-menu-animation  .1s;
+  height: 0rem;
+  width: 0rem;
+    
 
 }
-

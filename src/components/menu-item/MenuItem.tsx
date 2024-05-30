@@ -1,4 +1,5 @@
 import React, { ReactNode } from "react";
+import Link from "react-dom";
 import classes from "./MenuItem.module.css";
 import { IconType } from "react-icons";
 
@@ -9,9 +10,11 @@ interface Props {
 export const MenuItem = (props: Props) => {
   const { Icon, label } = props;
   return (
-    <div className={classes.menuItemWrapper}>
-      < Icon  className={classes.icon}/>
-      <p className={classes.label}>{label}</p>
-    </div>
+    <a className={classes.menuItemWrapper} href={`#${label}`}>
+      <Icon className={classes.icon} />
+      <p className={classes.label} style={{ color: "white" }}>
+        {label}
+      </p>
+    </a>
   );
 };

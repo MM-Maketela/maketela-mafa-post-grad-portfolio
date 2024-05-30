@@ -3,13 +3,13 @@
     height: 25px;
 }
 .menuItemWrapper{
-    background-color: green;
     display: grid;
     grid-template-columns: auto auto;
     align-items: center;
     justify-content: start;
     padding-inline: 8px;
     gap: 8px;
+   
     
 }
 .label{
