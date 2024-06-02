@@ -13,11 +13,11 @@ export const Landing = () => {
         <p className={classes.heroSummary}>As a passionate computer science graduate with a focus on software development and data analysis, I am eager to apply my technical skills to innovative projects in a collaborative tech environment. Seeking opportunities to contribute to cutting-edge solutions and enhance user experiences.</p>
       </div>
       <div className={classes.typeWriter}>
-        <span>Professional Full Stack &#160;</span>
+        <span>Professional &#160;</span>
         <span><Typewriter
           options={{
             
-            strings: ["React Web Developer."],
+            strings: ["Full Stack React Web Developer.","Data Analyst.", "Software Engineer.", "Full Stack Java Application Developer."],
             autoStart: true,
             loop: true,
           }}

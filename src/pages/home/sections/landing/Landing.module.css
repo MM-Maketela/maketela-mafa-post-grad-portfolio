@@ -47,14 +47,13 @@
 .heroSummary {
   color: rgba(255, 255, 255, 0.8);
   font-size: calc(1vw + 10px);
-  font-weight: bold;
   text-align: center;
  
 }
 .typeWriter {
   display: flex;
 
-  font-size: calc(1vw + 15px);
+  font-size: calc(1vw + 10px);
   font-weight: bold;
   text-align: start;
   color: rgba(255, 255, 255, 0.8);
