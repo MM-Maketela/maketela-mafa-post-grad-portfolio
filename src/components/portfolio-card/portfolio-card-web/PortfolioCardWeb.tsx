@@ -40,7 +40,7 @@ export const PortfolioCardWeb: React.FC<WebCardProps> = ({
             margin: "0px",
           }}
         >
-          Developers: {numberOfDevs}
+          Developer(s): {numberOfDevs}
         </p>
         <div style={{ flexGrow: "1" }}></div>
         <div style={{ display: "flex" }}>
