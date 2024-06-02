@@ -17,7 +17,7 @@ export const Landing = () => {
         <span><Typewriter
           options={{
             
-            strings: [" Web Developer."],
+            strings: ["React Web Developer."],
             autoStart: true,
             loop: true,
           }}
