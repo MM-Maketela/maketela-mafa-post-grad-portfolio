@@ -17,6 +17,10 @@ export const Header = () => {
 
   useEffect(()=>{
     setChangeHeader(window.innerWidth <= 900);
+    // if(changeHeader){
+    //   document.querySelector("header")?.setAttribute("height","1rem");
+    //   document.querySelector("header")?.setAttribute("background-color","black");
+    // }
   },[])
 
 

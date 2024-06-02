@@ -5,7 +5,8 @@ export const Landing = () => {
   return (
 
     <div id="Home" className={classes.landing}>
-      <div  className={classes.heroWrapper}>
+     <div className={classes.heroOuterWrapper}>
+     <div  className={classes.heroWrapper}>
       <div className={classes.heroText}>
         <h1 className={classes.mafaName}>Mafa Maketela</h1>
 
@@ -24,6 +25,7 @@ export const Landing = () => {
         
       </div>
     </div>
+     </div>
     </div>
     
   );
