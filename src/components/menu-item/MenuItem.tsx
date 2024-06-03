@@ -1,5 +1,3 @@
-import React, { ReactNode } from "react";
-import Link from "react-dom";
 import classes from "./MenuItem.module.css";
 import { IconType } from "react-icons";
 

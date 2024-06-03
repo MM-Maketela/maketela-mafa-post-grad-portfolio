@@ -1,25 +1,21 @@
-import React, { ReactNode, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import classes from "./Header.module.css";
 import { Navigation } from "../navigation/Navigation";
-import { MdWhatsapp, MdFacebook, MdMenu,MdHome,MdMiscellaneousServices, MdContacts} from "react-icons/md";
+import { MdWhatsapp, MdFacebook, MdMenu, MdHome, MdMiscellaneousServices, MdContacts } from "react-icons/md";
 import { AiOutlineLinkedin, AiOutlineGithub } from "react-icons/ai";
-import { FaExternalLinkAlt,FaProjectDiagram } from "react-icons/fa";
+import { FaExternalLinkAlt, FaProjectDiagram } from "react-icons/fa";
 import { DropDownMenu } from "../drop-down-menu/DropDownMenu";
 import { MenuItem } from "../menu-item/MenuItem";
 import { BsPersonLinesFill } from "react-icons/bs";
-
-
 
 export const Header = () => {
   const [changeColor, setChangeColor] = useState(false);
   const [changeHeader, setChangeHeader] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
 
-  useEffect(()=>{
+  useEffect(() => {
     setChangeHeader(window.innerWidth <= 900);
-  },[])
-
-
+  }, []);
 
   function windowScrolling() {
     window.scrollY >= 1 ? setChangeColor(true) : setChangeColor(false);
@@ -27,8 +23,7 @@ export const Header = () => {
   window.addEventListener("scroll", windowScrolling);
 
   return (
-
-    <header  className={classes.header} style={{ backgroundColor: changeColor ? "rgb(96, 125, 139)" : changeHeader ? "rgb(96, 125, 139)" : "transparent" }}>
+    <header className={classes.header} style={{ backgroundColor: changeColor ? "rgb(96, 125, 139)" : changeHeader ? "rgb(96, 125, 139)" : "transparent" }}>
       {changeHeader ? (
         <div className={classes.wrapperForSmallDevices}>
           <span>
@@ -39,7 +34,7 @@ export const Header = () => {
               }}
             />
 
-          <DropDownMenu menuState = {showMenu}>
+            <DropDownMenu menuState={showMenu}>
               <MenuItem Icon={MdHome} label="Home" />
               <MenuItem Icon={BsPersonLinesFill} label="About" />
               <MenuItem Icon={MdMiscellaneousServices} label="Services" />
