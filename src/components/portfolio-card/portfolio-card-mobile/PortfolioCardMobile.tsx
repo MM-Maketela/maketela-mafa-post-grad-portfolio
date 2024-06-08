@@ -7,9 +7,10 @@ interface MobileCardProps{
   name:string,
   usedTools: ReactNode [], 
   numberOfDevs: number;
+  repoLink:string
 }
 
-export const PortfolioCardMobile: React.FC<MobileCardProps> = ({image, name, usedTools, numberOfDevs}) => {
+export const PortfolioCardMobile: React.FC<MobileCardProps> = ({image, name, usedTools, numberOfDevs, repoLink}) => {
 
 
   return (
@@ -27,7 +28,7 @@ export const PortfolioCardMobile: React.FC<MobileCardProps> = ({image, name, use
           <div style={{flexGrow:"1"}}></div>
 
 
-          <a href="" style={{display:"flex", gap:".2rem", alignItems:"center", justifyContent:"center"}}>
+          <a href={repoLink} style={{display:"flex", gap:".2rem", alignItems:"center", justifyContent:"center"}}>
           CODE
                           <FaExternalLinkAlt  size={15} style={{color:"blue"}}/>
           </a>

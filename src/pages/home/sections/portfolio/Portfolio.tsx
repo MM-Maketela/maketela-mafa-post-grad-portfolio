@@ -20,12 +20,12 @@ export const Portfolio = () => {
     <div id="Portfolio" className={classes.portfolio}>
       <SubHeader heading="PORTFOLIO" subText="Explore a showcase of my finest work, exemplifying expertise, creativity, and dedication." />
       <div className={classes.portfolioCards}>
-        <PortfolioCardWeb image={saliEng} name="Sali-Eng" usedTools={[<FaReact/>, <IoLogoJavascript/>, <IoLogoHtml5/>, <IoLogoCss3/>]} numberOfDevs={3} repoLink=""/>
-        <PortfolioCardWeb image={easyShopping} name="EasyShopping" usedTools={[<FaReact/>,<FaNodeJs/> ,<IoLogoJavascript/>, <IoLogoHtml5/>, <IoLogoCss3/>,<SiMysql/> ]}  numberOfDevs={1}  repoLink=""/>
-        <PortfolioCardWeb image={amalgamation} name="Amagamation" usedTools={[<FaReact/>, <IoLogoJavascript/>, <IoLogoHtml5/>, <IoLogoCss3/>]}   numberOfDevs={3}  repoLink=""/>
-        <PortfolioCardMobile image={qhuba} name="Qhuba" usedTools={[<SiAndroidstudio/>, <FaJava/>, <SiMysql/> ]}  numberOfDevs={1}/>
-        <PortfolioCardMobile image={votingFingerprintSystem} name="Voting Fingerprint System" usedTools={[<SiAndroidstudio/>, <FaJava/>, <SiMysql/> ]}  numberOfDevs={5}/>
-        <PortfolioCardMobile image={cinema} name="Cinema" usedTools={[<SiAndroidstudio/>, <FaJava/> ]}  numberOfDevs={5}/>
+        <PortfolioCardWeb image={saliEng} name="Sali-Eng" usedTools={[<FaReact/>, <IoLogoJavascript/>, <IoLogoHtml5/>, <IoLogoCss3/>]} numberOfDevs={3} repoLink="https://github.com/Joshua3729/Sali-Eng"/>
+        <PortfolioCardWeb image={easyShopping} name="EasyShopping" usedTools={[<FaReact/>,<FaNodeJs/> ,<IoLogoJavascript/>, <IoLogoHtml5/>, <IoLogoCss3/>,<SiMysql/> ]}  numberOfDevs={1}  repoLink="https://github.com/MM-Maketela/easy-shopping"/>
+        <PortfolioCardWeb image={amalgamation} name="Amagamation" usedTools={[<FaReact/>, <IoLogoJavascript/>, <IoLogoHtml5/>, <IoLogoCss3/>]}   numberOfDevs={3}  repoLink="https://github.com/Joshua3729/Amalgamation"/>
+        <PortfolioCardMobile image={qhuba} name="Qhuba" usedTools={[<SiAndroidstudio/>, <FaJava/>, <SiMysql/> ]}  numberOfDevs={1} repoLink=""/>
+        <PortfolioCardMobile image={votingFingerprintSystem} name="Voting Fingerprint System" usedTools={[<SiAndroidstudio/>, <FaJava/>, <SiMysql/> ]}  numberOfDevs={5} repoLink="https://github.com/MM-Mafa/capstone-project"/>
+        <PortfolioCardMobile image={cinema} name="Cinema" usedTools={[<SiAndroidstudio/>, <FaJava/> ]}  numberOfDevs={5} repoLink="https://github.com/MM-Mafa/mini-project"/>
       </div>
     </div>
   );
