@@ -1,7 +1,11 @@
 import React from "react";
 import classes from "./Landing.module.css";
 import Typewriter from "typewriter-effect";
+import { FaExternalLinkAlt } from "react-icons/fa";
 export const Landing = () => {
+
+
+  const isSmallScreen = window.innerWidth <=900;
   return (
 
     <div id="Home" className={classes.landing}>
@@ -24,6 +28,28 @@ export const Landing = () => {
         /></span>
         
       </div>
+
+          {
+            isSmallScreen ? <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://drive.google.com/file/d/1m34lrXT1ojd5l89aUajqcPbW-wMmnI2i/view?usp=sharing"
+            style={{
+              display: "flex",
+              alignItems: "center",
+              gap: ".3rem",
+              // border: "8px solid rgba(255, 255, 255, 0.05)",
+              padding: ".3rem",
+              color: "rgba(255, 255, 255)",
+            }}
+          >
+            <h4 style={{ padding: "0px", margin: "0px" }}>HIRE ME</h4>
+            <div>
+              <FaExternalLinkAlt />
+            </div>
+          </a>: <div> </div>
+          }
+      
     </div>
      </div>
     </div>
