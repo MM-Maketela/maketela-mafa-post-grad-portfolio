@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import classes from "./Contact.module.css";
 import { CiFacebook } from "react-icons/ci";
 import { CiLinkedin } from "react-icons/ci";
@@ -9,17 +9,23 @@ import { TfiEmail } from "react-icons/tfi";
 import { BiPhoneCall } from "react-icons/bi";
 
 export const Contact = () => {
+
+  function handleSubmit(event_:any){
+    event_.preventDefault();
+    
+  }
   return (
     <div id="Contact" className={classes.contact}>
       <div className={classes.contactCard}>
-        <form className={classes.form}>
+        <form className={classes.form} id="form" >
           <h1 style={{ color: "rgb(255, 255, 255)", fontSize: "calc(1vw + 1.2rem)", textAlign: "start" }}>SEND MAFA A MESSAGE</h1>
 
-          <input className={classes.input} placeholder="Full name" id="name" name="name" />
-          <input className={classes.input} placeholder="Email" id="email" name="email" />
-          <input className={classes.input} placeholder="Subject" id="subject" name="subject" />
+          <input className={classes.input} required placeholder="Full name" id="name" name="name" />
+          <input className={classes.input} required placeholder="Email" id="email" name="email" />
+          <input className={classes.input} required placeholder="Subject" id="subject" name="subject" />
 
-          <textarea id="textarea" name="text" className={classes.textArea}></textarea>
+          <textarea id="textarea" name="text" className={classes.textArea} required></textarea>
+        <button className={classes.submitButton} type="submit" onClick={(event_)=>{handleSubmit(event_)}}>SUBMIT</button>
         </form>
         <div className={classes.contactInfo}>
           <h1 style={{ color: "rgb(255, 255, 255)", fontSize: "calc(1vw + 1.2rem)", textAlign: "start" }}>GET IN TOUCH</h1>
