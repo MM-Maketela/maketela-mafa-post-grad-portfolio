@@ -23,7 +23,12 @@ export const Header = () => {
   window.addEventListener("scroll", windowScrolling);
 
   return (
-    <header className={classes.header} style={{ backgroundColor: changeColor ? "rgb(96, 125, 139)" : changeHeader ? "rgb(96, 125, 139)" : "transparent" }}>
+    <header
+      className={classes.header}
+      style={{
+        backgroundColor: changeColor ? "rgb(96, 125, 139)" : changeHeader ? "rgb(96, 125, 139)" : "transparent",
+      }}
+    >
       {changeHeader ? (
         <div className={classes.wrapperForSmallDevices}>
           <span>
@@ -50,7 +55,7 @@ export const Header = () => {
               <a
                 target="_blank"
                 rel="noreferrer"
-                href="https://drive.google.com/file/d/1m34lrXT1ojd5l89aUajqcPbW-wMmnI2i/view?usp=sharing"
+                href="https://drive.google.com/file/d/1H8EwMclSpW52VzSoeBsOYci80R5pcssw/view?usp=sharing"
                 style={{
                   display: "flex",
                   alignItems: "center",
@@ -66,7 +71,11 @@ export const Header = () => {
                 </div>
               </a>
               <li>
-                <a target="_blank" href="https://wa.me/+27712208870/?text=Hello Mafa, I have been directed by the portfolio." rel="noreferrer">
+                <a
+                  target="_blank"
+                  href="https://wa.me/+27712208870/?text=Hello Mafa, I have been directed by the portfolio."
+                  rel="noreferrer"
+                >
                   <MdWhatsapp size={20} className={classes.contactListItem} />{" "}
                 </a>
               </li>
